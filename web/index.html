@@ -116,13 +116,16 @@ and open the template in the editor.
     </head>
     <body>
         <div data-role="page" id="Enclanche" style="min-height: 1323px; background: black; background-position: initial ; background-repeat: initial;">
-        <a href="#" class="btn large" onclick="playAudio('http://186.84.92.90:8082/;');">Play Audio</a>
-        <a href="#" class="btn large" onclick="pauseAudio();">Pause Playing Audio</a>
-        <p id="audio_position"></p>
+            <div id="controls"><a href="#" class="btn_play" onclick="playAudio('http://186.84.92.90:8082/;');"><img src="images/play.png" alt="play"></a>
+            <a href="#" class="btn_pause" onclick="pauseAudio();"><img src="images/pause.png" alt="pause"></a>
+            </div>
+            <p id="audio_position"></p>
             <div>
                 <img src="http://enclanche.site90.net/enclanche.png" alt="enclanche" style="width:100%;top:10%;left:0;opacity: 1;"/>
             </div> 
-
+            <div id="listening">
+                Te estas enclanchando con: //
+            </div>
         </div>
     </body>
 </html>
